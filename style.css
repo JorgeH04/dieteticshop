@@ -1,0 +1,380 @@
+@font-face {
+    font-family: "whitelist";
+    src: url(../fonts/whitelist/Whitelist.otf);
+}
+
+@font-face {
+    font-family: "stix";
+    src: url(../fonts/stix/18637.otf);
+}
+
+body {
+    font-family: stix;
+}
+
+section {
+    padding: 60px 0px;
+}
+
+.menuHover {
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 0.5px solid transparent;
+}
+
+.menu {
+    background: url(../img/menu-shadow.jpg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.menu,
+a,
+.footer {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #d6c82d;
+}
+
+.menu .menuWrp>a,
+h1,
+h3,
+h4,
+.product {
+    text-transform: uppercase;
+}
+
+.menu .menuWrp>a,
+h3,
+h4,
+.product {
+    font-weight: bold;
+}
+
+section.menu {
+    padding: 0px;
+}
+
+section.menu .menuWrp {
+    padding: 20px 0px;
+}
+
+section.menu .menuWrp a:hover {
+    color: white;
+    background: rgba(243, 240, 41, 0.1);
+    border-bottom: 0.5px solid #F3F029;
+}
+
+.italic {
+    letter-spacing: 0.09em;
+}
+
+.italic,
+h2 {
+    font-family: whitelist;
+}
+
+section.accolades {
+    text-align: center;
+}
+
+section.accolades .grayText {
+    font-style: italic;
+    color: #888787;
+    padding-top: 15px;
+}
+
+section.accolades .dishWrp {
+    text-align: left;
+    padding-top: 30px;
+}
+
+section.accolades .name {
+    color: #94711c;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section.foodCards {
+    padding: 0px;
+}
+
+section.foodCards .cardWrapper.imgWrp {
+    position: relative;
+}
+section.foodCards .cardWrapper.imgWrp img {
+    width: 100%;
+    height: auto;
+}
+
+.cardWrapper .textWrp {
+    background: rgba(243, 240, 41, 0.7);
+    text-align: center;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    opacity: 0;
+}
+
+section.foodCards .cardWrapper.textWrp h3 {
+    padding-top: 30px;
+}
+
+.cardWrapper:hover .textWrp {
+    opacity: 1;
+}
+
+/* section.foodCards.cardWrapper.textWrp. */ p.dishDescription {
+
+}
+
+.cardLinksWrp {
+    display: flex;
+    justify-content: center;
+}
+
+.cardLink {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 0px 5px;
+}
+
+.cardLink:hover {
+    opacity: 0.7;
+}
+
+.cardLink.searchIcon:before {
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjEuMTcyIDI0bC03LjM4Ny03LjM4N2MtMS4zODguODc0LTMuMDI0IDEuMzg3LTQuNzg1IDEuMzg3LTQuOTcxIDAtOS00LjAyOS05LTlzNC4wMjktOSA5LTkgOSA0LjAyOSA5IDljMCAxLjc2MS0uNTE0IDMuMzk4LTEuMzg3IDQuNzg1bDcuMzg3IDcuMzg3LTIuODI4IDIuODI4em0tMTIuMTcyLThjMy44NTkgMCA3LTMuMTQgNy03cy0zLjE0MS03LTctNy03IDMuMTQtNyA3IDMuMTQxIDcgNyA3eiIvPjwvc3ZnPg==");
+    display:block;
+    transform: translate(0px, 3px);
+}
+.cardLink.linkIcon:after {
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjEuMTcyIDI0bC03LjM4Ny03LjM4N2MtMS4zODguODc0LTMuMDI0IDEuMzg3LTQuNzg1IDEuMzg3LTQuOTcxIDAtOS00LjAyOS05LTlzNC4wMjktOSA5LTkgOSA0LjAyOSA5IDljMCAxLjc2MS0uNTE0IDMuMzk4LTEuMzg3IDQuNzg1bDcuMzg3IDcuMzg3LTIuODI4IDIuODI4em0tMTIuMTcyLThjMy44NTkgMCA3LTMuMTQgNy03cy0zLjE0MS03LTctNy03IDMuMTQtNyA3IDMuMTQxIDcgNyA3eiIvPjwvc3ZnPg==");
+    display:block;
+}
+
+section.showCard {
+    background: url(../img/brownie-blurred-shadow.png) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+section.showCard img.item {
+    border-radius: 250px;
+    border: 7px solid #f7f696;
+}
+
+section.showCard p.price {
+    font-weight: bolder;
+    padding-top: 30px;
+    font-size: 2rem;
+}
+
+section.showCard p.product {
+    font-size: 15px;
+}
+
+.button {
+    border-radius: 0.1rem;
+    border: 2px solid;
+    background-color: transparent;
+}
+
+.buttonOrder {
+    padding: 0.7rem 3rem;
+    margin: 10px 0px;
+}
+
+.buttonSubscribe {
+    background-color: transparent;
+    color: white;
+    padding: 0.4rem 2rem;
+
+}
+
+.buttonRead {
+    border: 2px solid #94711c;
+    padding: 0.5rem 2rem;
+    color: #94711c;
+}
+
+.emailButton {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.1rem 0.5rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+
+.emailButton::placeholder {
+    color: black;
+}
+
+
+section.footer {
+    background: url(../img/footer-shadow.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+section.footer ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+section.footer li {
+    display: block;
+}
+
+section.footer .footerWrp {
+    padding-bottom: 20px;
+}
+
+section.footer .footerWrp h4 {
+    margin: 0;
+}
+
+.product,
+.footer h4 {
+    color: #d6c82d;
+}
+
+section.footer h4 {
+    padding-right: 30px;
+}
+
+section.footer .footerUpperWrp img {
+    padding: 0px 5px;
+}
+
+section.footer .footerUpperWrp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 42px;
+}
+
+section.footer .subscription {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 42px;
+}
+
+section.footer .subscription .subscriptionForm {
+    display: flex;
+    justify-content: end;
+}
+
+section.footer .footerWrp .copyrightWrp {
+    text-align: left;
+}
+
+section.footer .footerWrp .copyrightWrp img {
+     display: block;
+    margin-left: auto; 
+}
+
+/* Slider styles */
+section.showCard a.carousel-control-prev {
+    justify-content: flex-start;
+}
+section.showCard a.carousel-control-next {
+    justify-content: flex-end;
+}
+
+/* About page*/
+
+
+/* Vegan page*/
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section.menu .menuWrp {
+        padding: 20px;
+    }
+
+    .menu a {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section.menu .mainMenuWrp p.italic {
+        padding: 20px 0px;
+    }
+
+    section.menu .menuWrp a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    section.showCard p.price {
+        font-size: 2.5rem;
+    }
+
+    section.showCard p.product {
+        font-size: 20px;
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    section.menu .menuWrp a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    section.showCard p.price {
+        font-size: 4rem;
+    }
+
+    section.showCard p.product {
+        font-size: 25px;
+    }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    section.showCard p.product {
+        font-size: 30px;
+    }
+
+    section.showCard p.text {
+        font-size: 1.2rem;
+    }
+
+    .buttonOrder {
+        font-size: 1.4rem;
+    }
+
+}
